@@ -1,0 +1,1637 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Al-Emad | Executive Telecom Portfolio</title>
+    <!-- Cairo Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- FIXED HEADER NAVBAR -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-en">AHMED AL-EMAD</span>
+          <span class="logo-separator">|</span>
+          <span class="logo-ar">أحمد العماد</span>
+        </a>
+        <button
+          class="mobile-nav-toggle"
+          aria-label="Toggle Menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </button>
+        <nav class="nav-menu">
+          <ul>
+            <li>
+              <a href="#profile" class="nav-link"
+                ><span class="lang-en">Profile</span
+                ><span class="lang-ar">الملف الشخصي</span></a
+              >
+            </li>
+            <li>
+              <a href="#competencies" class="nav-link"
+                ><span class="lang-en">Competencies</span
+                ><span class="lang-ar">الجدارات</span></a
+              >
+            </li>
+            <li>
+              <a href="#experience" class="nav-link"
+                ><span class="lang-en">Experience</span
+                ><span class="lang-ar">الخبرة المهنية</span></a
+              >
+            </li>
+            <li>
+              <a href="#education" class="nav-link"
+                ><span class="lang-en">Education</span
+                ><span class="lang-ar">التعليم</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="nav-link"
+                ><span class="lang-en">Contact</span
+                ><span class="lang-ar">الاتصال</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-controls">
+          <button
+            id="theme-toggle"
+            class="control-btn"
+            aria-label="Toggle Theme"
+          >
+            <svg
+              class="icon icon-sun"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="icon icon-moon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <button
+            id="lang-toggle"
+            class="control-btn lang-btn"
+            aria-label="Switch Language"
+          >
+            <span class="lang-text lang-en-text">AR</span>
+            <span class="lang-text lang-ar-text">EN</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION TARGETS -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-grid">
+            <!-- Profile Avatar wrapped in animated neon border ring -->
+            <div class="hero-avatar-wrapper">
+              <div class="neon-ring">
+                <div class="ring-pulse"></div>
+              </div>
+              <div class="avatar-container">
+                <!-- Custom Premium SVG Silhouette & Network web -->
+                <img
+                  src="img/Ahmed.jpg"
+                  alt="Ahmed's Profile Avatar"
+                  class="avatar-img"
+                />
+
+                <!-- <svg
+                  class="avatar-svg"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <linearGradient
+                      id="avatar-grad"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop
+                        offset="0%"
+                        stop-color="var(--color-accent)"
+                        stop-opacity="0.2"
+                      />
+                      <stop
+                        offset="100%"
+                        stop-color="var(--bg-card)"
+                        stop-opacity="0.9"
+                      />
+                    </linearGradient>
+                    <radialGradient id="glow-grad" cx="50%" cy="50%" r="50%">
+                      <stop
+                        offset="0%"
+                        stop-color="var(--color-accent)"
+                        stop-opacity="0.3"
+                      />
+                      <stop
+                        offset="100%"
+                        stop-color="var(--bg-base)"
+                        stop-opacity="0"
+                      />
+                    </radialGradient>
+                  </defs>
+                  <circle cx="100" cy="100" r="90" fill="url(#glow-grad)" />
+                  <g
+                    class="network-web"
+                    stroke="var(--color-accent)"
+                    stroke-width="0.7"
+                    opacity="0.35"
+                  >
+                    <circle
+                      cx="100"
+                      cy="100"
+                      r="80"
+                      fill="none"
+                      stroke-dasharray="3 3"
+                    />
+                    <circle
+                      cx="100"
+                      cy="100"
+                      r="55"
+                      fill="none"
+                      stroke-dasharray="2 2"
+                    />
+                    <circle cx="50" cy="60" r="3" fill="var(--color-accent)" />
+                    <circle cx="150" cy="60" r="3" fill="var(--color-accent)" />
+                    <circle
+                      cx="35"
+                      cy="110"
+                      r="2.5"
+                      fill="var(--color-accent)"
+                    />
+                    <circle
+                      cx="165"
+                      cy="110"
+                      r="2.5"
+                      fill="var(--color-accent)"
+                    />
+                    <circle
+                      cx="65"
+                      cy="150"
+                      r="3.5"
+                      fill="var(--color-accent)"
+                    />
+                    <circle
+                      cx="135"
+                      cy="150"
+                      r="3.5"
+                      fill="var(--color-accent)"
+                    />
+                    <circle cx="100" cy="35" r="4" fill="var(--color-accent)" />
+                    <line x1="100" y1="35" x2="50" y2="60" />
+                    <line x1="100" y1="35" x2="150" y2="60" />
+                    <line x1="50" y1="60" x2="35" y2="110" />
+                    <line x1="150" y1="60" x2="165" y2="110" />
+                    <line x1="35" y1="110" x2="65" y2="150" />
+                    <line x1="165" y1="110" x2="135" y2="150" />
+                    <line x1="65" y1="150" x2="135" y2="150" />
+                    <line x1="50" y1="60" x2="100" y2="100" />
+                    <line x1="150" y1="60" x2="100" y2="100" />
+                    <line x1="35" y1="110" x2="100" y2="100" />
+                    <line x1="165" y1="110" x2="100" y2="100" />
+                    <line x1="65" y1="150" x2="100" y2="100" />
+                    <line x1="135" y1="150" x2="100" y2="100" />
+                    <line x1="100" y1="35" x2="100" y2="100" />
+                  </g>
+                  <g class="silhouette-grp">
+                    <path
+                      d="M 40,165 C 40,140 60,130 100,130 C 140,130 160,140 160,165 L 175,195 L 25,195 Z"
+                      fill="url(#avatar-grad)"
+                      stroke="var(--color-accent)"
+                      stroke-width="1"
+                    />
+                    <path
+                      d="M 85,130 L 100,150 L 115,130 Z"
+                      fill="var(--bg-card)"
+                      stroke="var(--color-accent)"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M 96,150 L 104,150 L 108,185 L 100,195 L 92,185 Z"
+                      fill="var(--color-accent)"
+                    />
+                    <path
+                      d="M 85,110 C 85,125 115,125 115,110 L 112,98 L 88,98 Z"
+                      fill="var(--bg-card)"
+                      stroke="var(--color-accent)"
+                      stroke-width="1"
+                    />
+                    <path
+                      d="M 72,82 C 72,50 128,50 128,82 C 128,102 120,105 100,105 C 80,105 72,102 72,82 Z"
+                      fill="var(--bg-card)"
+                      stroke="var(--color-accent)"
+                      stroke-width="1"
+                    />
+                    <path
+                      d="M 71,78 C 70,68 76,57 88,54 C 100,51 118,53 126,62 C 130,67 129,75 127,78 C 124,70 115,64 100,64 C 85,64 76,71 71,78 Z"
+                      fill="var(--color-accent)"
+                      opacity="0.9"
+                    />
+                  </g>
+                </svg> -->
+              </div>
+            </div>
+
+            <!-- Hero Info & Typography -->
+            <div class="hero-content">
+              <div class="greeting">
+                <span class="lang-en">Welcome to my Executive Space</span>
+                <span class="lang-ar">مرحباً بكم في مساحتي التنفيذية</span>
+              </div>
+              <h1 class="hero-title">
+                <span class="lang-en">AHMED AL-EMAD</span>
+                <span class="lang-ar">أحمد العماد</span>
+              </h1>
+
+              <!-- Dynamic Typing Container -->
+              <div class="typing-container">
+                <span class="typing-prefix">
+                  <span class="lang-en">Executive Role:</span>
+                  <span class="lang-ar">المنصب التنفيذي:</span>
+                </span>
+                <span
+                  id="typewriter"
+                  class="typewriter-text"
+                  translate="no"
+                ></span>
+                <span class="cursor">|</span>
+              </div>
+
+              <p class="hero-tagline">
+                <span class="lang-en"
+                  >Synthesizing technology and strategy for 25+ years across
+                  leading telecom giants to unlock multi-million dollar
+                  corporate value.</span
+                >
+                <span class="lang-ar"
+                  >المواءمة الفعّالة بين الرؤية التقنية والاستراتيجية التجارية
+                  لأكثر من 25 عاماً عبر كبرى شركات الاتصالات لتحقيق أعلى قيمة
+                  مؤسسية وعوائد مالية.</span
+                >
+              </p>
+
+              <!-- CV Download Button with ripple -->
+              <div class="hero-actions">
+                <a
+                  href="Eng.Ahmed-alemad.pdf"
+                  download="Eng.Ahmed-alemad.pdf"
+                  class="btn btn-primary ripple-btn"
+                  role="button"
+                >
+                  <span class="btn-text">
+                    <span class="lang-en">Download Executive CV</span>
+                    <span class="lang-ar">تحميل السيرة الذاتية التنفيذية</span>
+                  </span>
+                  <svg
+                    class="btn-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <canvas class="ripple-canvas"></canvas>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <span class="lang-en">Acquire Expertise</span>
+                  <span class="lang-ar">تواصل معي</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-wave">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,53.05,16.51,78.6,22.32,152.09,39.11,228,51.81,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </section>
+      <!-- Executive Profile Summary Section -->
+      <section id="profile" class="section-profile">
+        <div class="container">
+          <div class="section-title-wrapper">
+            <h2 class="section-title">
+              <span class="lang-en">Executive Profile</span>
+              <span class="lang-ar">الملف التعريفي التنفيذي</span>
+            </h2>
+            <div class="section-title-bar"></div>
+          </div>
+
+          <div class="profile-card-wrapper glass-panel">
+            <div class="profile-badge-cluster">
+              <div class="profile-stat-box">
+                <span class="stat-num" translate="no">25+</span>
+                <span class="stat-label">
+                  <span class="lang-en">Years of Leadership</span>
+                  <span class="lang-ar">عاماً من القيادة</span>
+                </span>
+              </div>
+              <div class="profile-stat-box">
+                <span class="stat-num" translate="no">2G-4G</span>
+                <span class="stat-label">
+                  <span class="lang-en">Network Tech</span>
+                  <span class="lang-ar">أجيال الشبكات</span>
+                </span>
+              </div>
+              <div class="profile-stat-box">
+                <span class="stat-num" translate="no">DCEO</span>
+                <span class="stat-label">
+                  <span class="lang-en">Executive Rank</span>
+                  <span class="lang-ar">رتبة قيادية عليا</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="profile-text-content">
+              <div class="profile-lead-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+
+              <!-- EN Text Embedded -->
+              <div class="lang-en profile-desc">
+                <p class="highlight-p">
+                  A visionary and results-driven Telecom Executive with over 25
+                  years of local and international experience in directing,
+                  operating, and transforming telecommunications giants
+                  (including Orange Group and Spacetel/MTN).
+                </p>
+                <p>
+                  Demonstrated success across the entire telecom value chain,
+                  holding top-tier executive roles including Deputy CEO, Chief
+                  Technology Officer, Technical Director, and Chief Commercial
+                  Officer.
+                </p>
+                <p>
+                  Expert in aligning technical capabilities with commercial
+                  strategies to maximize revenue, eliminate operational leaks,
+                  deploy
+                  <span translate="no" class="tech-term">2G/3G/4G</span>
+                  networks, and cultivate a high-performance corporate culture.
+                </p>
+              </div>
+
+              <!-- AR Text Embedded -->
+              <div class="lang-ar profile-desc">
+                <p class="highlight-p">
+                  قائد تنفيذي استراتيجي في قطاع الاتصالات بخبرة تتجاوز 25 عاماً
+                  من العمل المحلي والدولي في إدارة وتشغيل وتطوير كبرى شركات
+                  الاتصالات (مثل مجموعة أورانج العالمية وسبستيل/MTN).
+                </p>
+                <p>
+                  أمتلك سجلاً حافلاً بالنجاحات في قيادة الهياكل التنفيذية
+                  العليا، حيث شغلت مناصب نائب الرئيس التنفيذي، ورئيس القطاع
+                  التكنولوجي والمعلوماتي، والمدير العام الفني، ورئيس القطاع
+                  التجاري.
+                </p>
+                <p>
+                  خبير محترف في المواءمة بين القدرات التقنية والاستراتيجيات
+                  التجارية لتحقيق أعلى العوائد الإيرادية، ومعالجة الخسائر
+                  التشغيلية، وتنفيذ شبكات الجيل الثاني والثالث والرابع
+                  <span translate="no" class="tech-term">2G/3G/4G</span>، وبناء
+                  بيئات عمل قائمة على حوكمة الأداء.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Core Competencies Grid Section -->
+      <section id="competencies" class="section-competencies">
+        <div class="container">
+          <div class="section-title-wrapper">
+            <h2 class="section-title">
+              <span class="lang-en">Core Competencies</span>
+              <span class="lang-ar">الجدارات الجوهرية</span>
+            </h2>
+            <div class="section-title-bar"></div>
+          </div>
+
+          <div class="competencies-grid">
+            <!-- Card 1: Executive Leadership -->
+            <div class="comp-card" tabindex="0">
+              <div class="comp-icon-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="comp-card-title">
+                <span class="lang-en">Executive Leadership</span>
+                <span class="lang-ar">القيادة التنفيذية العليا</span>
+              </h3>
+              <ul class="comp-list">
+                <li>
+                  <span class="lang-en">Strategy Translation & Execution</span>
+                  <span class="lang-ar">تحويل الرؤى إلى خطط استراتيجية</span>
+                </li>
+                <li>
+                  <span class="lang-en">Cross-Functional Alignment</span>
+                  <span class="lang-ar">المواءمة الشاملة بين القطاعات</span>
+                </li>
+                <li>
+                  <span class="lang-en">Board Governance</span>
+                  <span class="lang-ar">حوكمة مجالس الإدارة</span>
+                </li>
+                <li>
+                  <span class="lang-en">Organizational Transformation</span>
+                  <span class="lang-ar"
+                    >تحويل العمليات وإعادة الهيكلة المؤسسية</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Card 2: Technical & IT Operations -->
+            <div class="comp-card" tabindex="0">
+              <div class="comp-icon-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="comp-card-title">
+                <span class="lang-en">Technical & IT Operations</span>
+                <span class="lang-ar">التشغيل الفني والتكنولوجي</span>
+              </h3>
+              <ul class="comp-list">
+                <li>
+                  <span class="lang-en"
+                    >Next-Gen Network Deployment (<span
+                      translate="no"
+                      class="tech-term"
+                      >2G/3G/4G</span
+                    >)</span
+                  >
+                  <span class="lang-ar"
+                    >تنفيذ شبكات أجيال الاتصال الحديثة (<span
+                      translate="no"
+                      class="tech-term"
+                      >2G/3G/4G</span
+                    >)</span
+                  >
+                </li>
+                <li>
+                  <span class="lang-en"
+                    ><span translate="no" class="tech-term">BSS/OSS</span>
+                    Platforms</span
+                  >
+                  <span class="lang-ar"
+                    >إدارة منصات الـ
+                    <span translate="no" class="tech-term">BSS/OSS</span></span
+                  >
+                </li>
+                <li>
+                  <span class="lang-en">Technology Roadmaps</span>
+                  <span class="lang-ar">إدارة الخرائط التقنية للشبكات</span>
+                </li>
+                <li>
+                  <span class="lang-en"
+                    >Vendor &
+                    <span translate="no" class="tech-term">SLA</span>
+                    Management</span
+                  >
+                  <span class="lang-ar"
+                    >إدارة الموردين وعقود الـ
+                    <span translate="no" class="tech-term">SLAs</span></span
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Card 3: Commercial Strategy -->
+            <div class="comp-card" tabindex="0">
+              <div class="comp-icon-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <h3 class="comp-card-title">
+                <span class="lang-en">Commercial Strategy</span>
+                <span class="lang-ar">الاستراتيجية التجارية والنمو</span>
+              </h3>
+              <ul class="comp-list">
+                <li>
+                  <span class="lang-en">Market Share Acquisition</span>
+                  <span class="lang-ar">اختراق السوق والاستحواذ</span>
+                </li>
+                <li>
+                  <span class="lang-en"
+                    >Customer Experience (<span translate="no" class="tech-term"
+                      >CX</span
+                    >) & Churn Reduction</span
+                  >
+                  <span class="lang-ar"
+                    >تحسين تجربة العميل والحد من خروج المشتركين
+                    <span translate="no" class="tech-term">Churn</span></span
+                  >
+                </li>
+                <li>
+                  <span class="lang-en">Product Lifecycle & Pricing</span>
+                  <span class="lang-ar">دورة حياة المنتج وتصميم التسعير</span>
+                </li>
+                <li>
+                  <span class="lang-en"
+                    ><span translate="no" class="tech-term">ARPU</span> Growth
+                    Engine</span
+                  >
+                  <span class="lang-ar"
+                    >رفع قيمة الـ
+                    <span translate="no" class="tech-term">ARPU</span>
+                    للمشتركين</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Card 4: Financial & Operational Efficiency -->
+            <div class="comp-card" tabindex="0">
+              <div class="comp-icon-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="16"></line>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="comp-card-title">
+                <span class="lang-en">Financial & Operational Efficiency</span>
+                <span class="lang-ar">الكفاءة المالية والتشغيلية</span>
+              </h3>
+              <ul class="comp-list">
+                <li>
+                  <span class="lang-en"
+                    ><span translate="no" class="tech-term">CAPEX/OPEX</span>
+                    Optimization</span
+                  >
+                  <span class="lang-ar"
+                    >ضبط وتقنين النفقات
+                    <span translate="no" class="tech-term"
+                      >CAPEX/OPEX</span
+                    ></span
+                  >
+                </li>
+                <li>
+                  <span class="lang-en">Cost Control</span>
+                  <span class="lang-ar">تقليص الهدر المالي والمصروفات</span>
+                </li>
+                <li>
+                  <span class="lang-en">Predictive Data Analytics</span>
+                  <span class="lang-ar"
+                    >تحليلات البيانات التنبؤية المتكاملة</span
+                  >
+                </li>
+                <li>
+                  <span class="lang-en"
+                    >Performance Frameworks (<span
+                      translate="no"
+                      class="tech-term"
+                      >KPIs</span
+                    >)</span
+                  >
+                  <span class="lang-ar"
+                    >تفعيل معايير الأداء ومؤشرات النجاح
+                    <span translate="no" class="tech-term">KPIs</span></span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Engineering Timeline Section -->
+      <section id="experience" class="section-timeline">
+        <div class="container">
+          <div class="section-title-wrapper">
+            <h2 class="section-title">
+              <span class="lang-en">Executive Engineering Timeline</span>
+              <span class="lang-ar">المسيرة المهنية والهندسية</span>
+            </h2>
+            <div class="section-title-bar"></div>
+          </div>
+
+          <!-- Interactivity Filters -->
+          <div class="timeline-filters">
+            <button class="filter-btn active" data-filter="all">
+              <span class="lang-en">All Roles</span>
+              <span class="lang-ar">جميع الأدوار</span>
+            </button>
+            <button class="filter-btn" data-filter="exec">
+              <span class="lang-en">Executive (DCEO/CTO/CCO)</span>
+              <span class="lang-ar">الإدارة التنفيذية</span>
+            </button>
+            <button class="filter-btn" data-filter="mgmt">
+              <span class="lang-en">Management & QoS</span>
+              <span class="lang-ar">الإدارة والتشغيل</span>
+            </button>
+            <button class="filter-btn" data-filter="eng">
+              <span class="lang-en">Engineering & Support</span>
+              <span class="lang-ar">الهندسة والتأسيس</span>
+            </button>
+          </div>
+
+          <!-- Timeline Main Container -->
+          <div class="timeline-container">
+            <div class="timeline-axis"></div>
+
+            <!-- Job 1 -->
+            <div class="timeline-item reveal" data-category="exec">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-header">
+                  <span class="timeline-date" translate="no"
+                    >Aug 2022 – Jun 2023</span
+                  >
+                  <h3 class="timeline-role">
+                    <span class="lang-en"
+                      >Deputy Chief Executive Officer (DCEO)</span
+                    >
+                    <span class="lang-ar">نائب الرئيس التنفيذي (DCEO)</span>
+                  </h3>
+                  <div class="timeline-company" translate="no">
+                    Y-Telecom (Yemen)
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    <span class="lang-en"
+                      >Acted as primary anchor to CEO, translating strategy into
+                      actionable business plans across commercial, technical,
+                      and financial divisions.</span
+                    >
+                    <span class="lang-ar"
+                      >دعم الرئيس التنفيذي ومجلس الإدارة في تحويل الرؤية
+                      الاستراتيجية إلى خطط تشغيلية قابلة للتنفيذ في القطاعات
+                      التجارية والتقنية والمالية.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="lang-en"
+                      >Synced commercial roadmap with technology infrastructure
+                      capabilities to secure subscriber and revenue
+                      growth.</span
+                    >
+                    <span class="lang-ar"
+                      >قيادة التنسيق والمواءمة بين القطاع التجاري والتقني لضمان
+                      توافق قدرات الشبكة مع متطلبات السوق وتحقيق النمو
+                      الإيرادي.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="lang-en"
+                      >Optimized
+                      <span translate="no" class="tech-term">CAPEX/OPEX</span>
+                      allocations to maximize
+                      <span translate="no" class="tech-term">ROI</span> with
+                      CFO.</span
+                    >
+                    <span class="lang-ar"
+                      >تقنين المصروفات الرأسمالية والتشغيلية
+                      <span translate="no" class="tech-term">CAPEX/OPEX</span>
+                      وتوجيه الاستثمارات لتعظيم العائد على الاستثمار
+                      <span translate="no" class="tech-term">ROI</span> بالتنسيق
+                      مع القطاع المالي.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="lang-en"
+                      >Presented data-driven risk assessments to the Board of
+                      Directors.</span
+                    >
+                    <span class="lang-ar"
+                      >إعداد تقارير الأداء المؤسسي الشاملة وإدارة المخاطر
+                      التشغيلية وعرضها مباشرة أمام مجلس الإدارة.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="timeline-item reveal" data-category="exec">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-header">
+                  <span class="timeline-date" translate="no"
+                    >Jan 2022 – Aug 2022</span
+                  >
+                  <h3 class="timeline-role">
+                    <span class="lang-en"
+                      >Chief Technology & Information Officer (CTIO)</span
+                    >
+                    <span class="lang-ar"
+                      >رئيس قطاع التكنولوجيا والمعلومات (CTIO)</span
+                    >
+                  </h3>
+                  <div class="timeline-company" translate="no">
+                    Y-Telecom (Yemen)
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    <span class="lang-en"
+                      >Formulated long-term network roadmap, modernizing core
+                      infrastructure for stable
+                      <span translate="no" class="tech-term">4G</span>
+                      expansion.</span
+                    >
+                    <span class="lang-ar"
+                      >وضع الخارطة التقنية للشركة وتحديث الأنظمة القديمة لدعم
+                      استقرار وتوسعة شبكة الجيل الرابع
+                      <span translate="no" class="tech-term">4G</span>.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="lang-en"
+                      >Optimized mission-critical
+                      <span translate="no" class="tech-term">BSS/OSS</span>,
+                      <span translate="no" class="tech-term">CRM</span>, and
+                      real-time billing/charging systems.</span
+                    >
+                    <span class="lang-ar"
+                      >الإشراف على كفاءة منصات الـ
+                      <span translate="no" class="tech-term">BSS/OSS</span>،
+                      وأنظمة الفوترة اللحظية، والـ
+                      <span translate="no" class="tech-term">CRM</span> لضمان
+                      خدمات رقمية سلسة ومستدامة.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="lang-en"
+                      >Implemented robust business continuity and
+                      disaster-recovery protocols to safeguard customer
+                      data.</span
+                    >
+                    <span class="lang-ar"
+                      >تفعيل خطط الطوارئ والتعافي من الكوارث لحماية البنية
+                      التحتية الحيوية وبيانات المشتركين بشكل كامل.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="timeline-item reveal" data-category="mgmt">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-header">
+                  <span class="timeline-date" translate="no"
+                    >Nov 2020 – Jan 2022</span
+                  >
+                  <h3 class="timeline-role">
+                    <span class="lang-en"
+                      >Technical General Manager / Technical Director</span
+                    >
+                    <span class="lang-ar"
+                      >المدير العام الفني / المدير التقني</span
+                    >
+                  </h3>
+                  <div class="timeline-company" translate="no">
+                    Y-Telecom (Yemen)
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    <span class="lang-en"
+                      >Managed day-to-day operations and maintenance across
+                      <span translate="no" class="tech-term">2G/3G/4G</span>
+                      networks, minimizing
+                      <span translate="no" class="tech-term">MTTR</span> and
+                      outages.</span
+                    >
+                    <span class="lang-ar"
+                      >إدارة التشغيل والصيانة اليومية لشبكات
+                      <span translate="no" class="tech-term">2G/3G/4G</span>
+                      وأنظمة النقل، وخفض متوسط زمن الإصلاح
+                      <span translate="no" class="tech-term">MTTR</span> وانقطاع
+                      الخدمة.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="lang-en"
+                      >Executed complex network expansions on time and under
+                      budget.</span
+                    >
+                    <span class="lang-ar"
+                      >قيادة مشاريع التوسعة والتحديث الفني والمواقع الجديدة في
+                      المواعيد المحددة وبأقل من الميزانيات المعتمدة.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="lang-en"
+                      >Supervised field teams and vendors to hit target
+                      <span translate="no" class="tech-term">KPIs</span> (Call
+                      Setup Success Rate, Data Throughput, Latency, Transmission
+                      Availability).</span
+                    >
+                    <span class="lang-ar"
+                      >الإشراف على فرق العمل الميدانية والموردين الخارجيين لضمان
+                      مطابقة أعمالهم للـ
+                      <span translate="no" class="tech-term">SLAs</span> ومؤشرات
+                      جودة الاتصال والبيانات.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="lang-en"
+                      >Teamed up with Customer Care to resolve network-related
+                      customer complaints and reduce churn.</span
+                    >
+                    <span class="lang-ar"
+                      >التنسيق الكامل مع رعاية العملاء لمعالجة شكاوى المشتركين
+                      التقنية بشكل جذري والحد من التراجع.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Job 4 -->
+            <div class="timeline-item reveal" data-category="exec">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-header">
+                  <span class="timeline-date" translate="no"
+                    >Aug 2020 – Oct 2020</span
+                  >
+                  <h3 class="timeline-role">
+                    <span class="lang-en">Chief Commercial Officer (CCO)</span>
+                    <span class="lang-ar">رئيس القطاع التجاري (CCO)</span>
+                  </h3>
+                  <div class="timeline-company" translate="no">
+                    Y-Telecom (Yemen)
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    <span class="lang-en"
+                      >Directed multi-channel sales distribution networks
+                      (retail, B2B, digital, dealers) to capture market
+                      share.</span
+                    >
+                    <span class="lang-ar"
+                      >قيادة قنوات المبيعات المختلفة (التجزئة، الشركات،
+                      الموزعين، الرقمية) واختراق السوق للاستحواذ على أكبر حصة
+                      ممكنة.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="lang-en"
+                      >Led commercialization of tailored tariff packages,
+                      driving up
+                      <span translate="no" class="tech-term">ARPU</span> while
+                      maintaining competitive margins.</span
+                    >
+                    <span class="lang-ar"
+                      >تصميم الباقات والخدمات الجديدة واستراتيجيات التسعير لرفع
+                      قيمة الـ
+                      <span translate="no" class="tech-term">ARPU</span> مع
+                      الحفاظ على الهوامش الربحية المستدامة.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="lang-en"
+                      >Utilized data analytics to roll out targeted retention
+                      programs and reduce churn.</span
+                    >
+                    <span class="lang-ar"
+                      >استخدام تحليلات البيانات وسلوك المستهلك لبناء برامج ولاء
+                      ذكية تضمن الحد من خروج المشتركين والتبديل.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Job 5 -->
+            <div class="timeline-item reveal" data-category="mgmt">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-header">
+                  <span class="timeline-date" translate="no"
+                    >Jan 2015 – Aug 2020</span
+                  >
+                  <h3 class="timeline-role">
+                    <span class="lang-en">Planning & Development Manager</span>
+                    <span class="lang-ar">مدير التخطيط والتطوير</span>
+                  </h3>
+                  <div class="timeline-company" translate="no">
+                    Y-Telecom (Yemen)
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    <span class="lang-en"
+                      >Translated commercial pipeline requirements into scalable
+                      technical designs, charting subscriber growth forecasts to
+                      plan capacity expansions.</span
+                    >
+                    <span class="lang-ar"
+                      >ترجمة المتطلبات التجارية والتسويقية إلى خطط فنية وهندسية،
+                      والتنبؤ بالقدرة الاستيعابية المستقبلية للشبكة بناءً على
+                      نمو حركة البيانات والمشتركين.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Job 6 -->
+            <div class="timeline-item reveal" data-category="mgmt">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-header">
+                  <span class="timeline-date" translate="no"
+                    >Jan 2010 – Aug 2014</span
+                  >
+                  <h3 class="timeline-role">
+                    <span class="lang-en"
+                      >Service Management, Quality & Improvement Center
+                      Manager</span
+                    >
+                    <span class="lang-ar"
+                      >مدير إدارة الخدمة ومركز الجودة والتحسين</span
+                    >
+                  </h3>
+                  <div class="timeline-company" translate="no">
+                    Orange (Uganda)
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    <span class="lang-en"
+                      >Championed global quality and excellence standards across
+                      international network clusters, leveraging advanced
+                      analytics to pinpoint structural flaws and enhance
+                      end-to-end service delivery.</span
+                    >
+                    <span class="lang-ar"
+                      >تطبيق معايير الجودة والتميز العالمية لمجموعة أورانج
+                      الفرنسية، وتحليل البيانات المعقدة لاكتشاف نقاط الخلل
+                      الفنية ووضع المعالجات لرفع كفاءة الخدمة.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Job 7 -->
+            <div class="timeline-item reveal" data-category="mgmt">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-header">
+                  <span class="timeline-date" translate="no"
+                    >Jun 2008 – Dec 2009</span
+                  >
+                  <h3 class="timeline-role">
+                    <span class="lang-en"
+                      >BSS Operations & Quality of Service (QoS) Manager</span
+                    >
+                    <span class="lang-ar"
+                      >مدير تشغيل الـ BSS وجودة الخدمة (QoS)</span
+                    >
+                  </h3>
+                  <div class="timeline-company" translate="no">
+                    Orange (Uganda)
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    <span class="lang-en"
+                      >Monitored and elevated
+                      <span translate="no" class="tech-term">BSS</span> key
+                      performance indicators, engineering automated workflows
+                      and preventive maintenance programs to boost operational
+                      uptime and optimize infrastructure costs.</span
+                    >
+                    <span class="lang-ar"
+                      >مراقبة مؤشرات الأداء الحيوية لشبكة الـ
+                      <span translate="no" class="tech-term">BSS</span>، وتطوير
+                      آليات الصيانة الوقائية وهندسة العمليات لرفع استقرار الشبكة
+                      وخفض التكاليف التشغيلية.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Job 8 -->
+            <div class="timeline-item reveal" data-category="mgmt">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-header">
+                  <span class="timeline-date" translate="no"
+                    >Nov 2007 – Jun 2008</span
+                  >
+                  <h3 class="timeline-role">
+                    <span class="lang-en">BSS Operations Manager</span>
+                    <span class="lang-ar">مدير عمليات الـ BSS</span>
+                  </h3>
+                  <div class="timeline-company" translate="no">
+                    Hits Telecom Orange (Uganda)
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    <span class="lang-en"
+                      >Directed technical engineering teams through the critical
+                      initial stages of
+                      <span translate="no" class="tech-term">BSS</span>
+                      infrastructure deployment, configuration, and operational
+                      field testing.</span
+                    >
+                    <span class="lang-ar"
+                      >الإشراف الفني المباشر على التأسيس والتركيبات الأولية
+                      والتكوين الهيكلي الخاص بأنظمة الـ
+                      <span translate="no" class="tech-term">BSS</span> وتشغيلها
+                      التجريبي مع فرق المهندسين.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Job 9 -->
+            <div class="timeline-item reveal" data-category="eng">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-header">
+                  <span class="timeline-date" translate="no"
+                    >Mar 2003 – Sep 2006</span
+                  >
+                  <h3 class="timeline-role">
+                    <span class="lang-en"
+                      >BSS Operation & Support Engineer</span
+                    >
+                    <span class="lang-ar">مهندس تشغيل ودعم الـ BSS</span>
+                  </h3>
+                  <div class="timeline-company" translate="no">
+                    Spacetel Yemen (Later MTN) | Yemen
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    <span class="lang-en"
+                      >Provided operational maintenance and technical support
+                      for
+                      <span translate="no" class="tech-term">BSS</span> network
+                      architecture, participating in the launch and optimization
+                      of early
+                      <span translate="no" class="tech-term">2G/3G</span>
+                      network projects.</span
+                    >
+                    <span class="lang-ar"
+                      >تقديم الصيانة التشغيلية والدعم الفني لبنية الـ
+                      <span translate="no" class="tech-term">BSS</span> الفنية،
+                      والمشاركة في التنفيذ والتشغيل الناجح لمشاريع شبكات الجيل
+                      الثاني والثالث
+                      <span translate="no" class="tech-term">2G/3G</span>.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Job 10 -->
+            <div class="timeline-item reveal" data-category="eng">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-header">
+                  <span class="timeline-date" translate="no"
+                    >Sep 2001 – Feb 2003</span
+                  >
+                  <h3 class="timeline-role">
+                    <span class="lang-en"
+                      >Network Monitoring & Operation Engineer</span
+                    >
+                    <span class="lang-ar">مهندس مراقبة وتشغيل الشبكة</span>
+                  </h3>
+                  <div class="timeline-company" translate="no">
+                    Spacetel Yemen (Later MTN) | Yemen
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    <span class="lang-en"
+                      >Conducted real-time surveillance and monitoring of
+                      network indicators, diagnosing faults rapidly to ensure
+                      service continuity.</span
+                    >
+                    <span class="lang-ar"
+                      >تولّي مهام المراقبة والإشراف اللحظي على مؤشرات الشبكة،
+                      وتشخيص الأعطال بشكل فوري لضمان استمرارية الخدمات وعدم
+                      انقطاعها.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Job 11 -->
+            <div class="timeline-item reveal" data-category="eng">
+              <div class="timeline-node"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-header">
+                  <span class="timeline-date" translate="no"
+                    >Feb 2000 – Aug 2001</span
+                  >
+                  <h3 class="timeline-role">
+                    <span class="lang-en"
+                      >Installation & Operation Supervisor Engineer</span
+                    >
+                    <span class="lang-ar">مهندس مشرف على التركيب والتشغيل</span>
+                  </h3>
+                  <div class="timeline-company" translate="no">
+                    Alo Public Telephones | Yemen
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    <span class="lang-en"
+                      >Supervised the field deployment, alignment, site
+                      activation, and mechanical operation of public telecom
+                      infrastructure equipment.</span
+                    >
+                    <span class="lang-ar"
+                      >الإشراف الميداني الفعلي على تركيب، ضبط، وتفعيل المواقع
+                      والتشغيل الميكانيكي والمباشر لمعدات وأنظمة الهواتف
+                      العمومية.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Education Section -->
+      <section id="education" class="section-education">
+        <div class="container">
+          <div class="section-title-wrapper">
+            <h2 class="section-title">
+              <span class="lang-en">Academic Credentials</span>
+              <span class="lang-ar">المؤهلات الأكاديمية</span>
+            </h2>
+            <div class="section-title-bar"></div>
+          </div>
+
+          <div class="education-card glass-panel">
+            <div class="edu-icon-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+              </svg>
+            </div>
+            <div class="edu-details">
+              <h3 class="edu-degree">
+                <span class="lang-en"
+                  >Bachelor’s Degree in Telecommunications Engineering</span
+                >
+                <span class="lang-ar">بكالوريوس هندسة اتصالات</span>
+              </h3>
+              <div class="edu-institute">
+                <span class="lang-en">Sana'a University, Yemen</span>
+                <span class="lang-ar">جامعة صنعاء، اليمن</span>
+              </div>
+              <div class="edu-year" translate="no">1998</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Interactive Contact Footer -->
+      <footer id="contact" class="footer-section">
+        <div class="container footer-container">
+          <div class="footer-grid">
+            <!-- Contact Direct Info -->
+            <div class="contact-info-column">
+              <div class="footer-brand">
+                <span class="logo-en">AHMED AL-EMAD</span>
+                <span class="logo-ar">أحمد العماد</span>
+              </div>
+              <p class="contact-lead-text">
+                <span class="lang-en"
+                  >Have an elite telecom challenge, advisory board role, or
+                  high-stakes consulting project? Initiate communication
+                  directly.</span
+                >
+                <span class="lang-ar"
+                  >هل لديكم تحدٍ استراتيجي في قطاع الاتصالات، أو منصب استشاري،
+                  أو مشروع يهدف لتطوير الأداء؟ اتصلوا بي مباشرة.</span
+                >
+              </p>
+
+              <div class="info-list">
+                <!-- Phone -->
+                <div class="info-item">
+                  <div class="info-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="info-text">
+                    <span class="info-label">
+                      <span class="lang-en">Direct Telephone</span>
+                      <span class="lang-ar">الهاتف المباشر</span>
+                    </span>
+                    <div class="info-links" translate="no" dir="ltr">
+                      <a href="tel:+967773747576" class="contact-link"
+                        >+967 773 747 576</a
+                      >
+                      <span class="divider">/</span>
+                      <a href="tel:+967700990444" class="contact-link"
+                        >+967 700 990 444</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="info-item">
+                  <div class="info-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      ></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="info-text">
+                    <span class="info-label">
+                      <span class="lang-en">Executive Email</span>
+                      <span class="lang-ar">البريد الإلكتروني التنفيذي</span>
+                    </span>
+                    <a
+                      href="mailto:ahmed.alemad@gmail.com"
+                      class="contact-link"
+                      translate="no"
+                      >ahmed.alemad@gmail.com</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Location -->
+                <div class="info-item">
+                  <div class="info-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="info-text">
+                    <span class="info-label">
+                      <span class="lang-en">Location</span>
+                      <span class="lang-ar">المقر الحالي</span>
+                    </span>
+                    <span class="contact-address-text">
+                      <span class="lang-en">Airport Street, Sana'a, Yemen</span>
+                      <span class="lang-ar">خط المطار، صنعاء، اليمن</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Interactive Contact Form -->
+            <div class="contact-form-column">
+              <div class="form-container glass-panel">
+                <h3 class="form-title">
+                  <span class="lang-en">Send Secure Message</span>
+                  <span class="lang-ar">إرسال رسالة آمنة</span>
+                </h3>
+                <form id="contact-form" novalidate>
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <div class="input-wrapper">
+                        <input
+                          type="text"
+                          id="form-name"
+                          required
+                          placeholder=" "
+                        />
+                        <label for="form-name">
+                          <span class="lang-en">Full Name</span>
+                          <span class="lang-ar">الاسم الكامل</span>
+                        </label>
+                      </div>
+                      <div class="error-msg" id="name-error"></div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-wrapper">
+                        <input
+                          type="email"
+                          id="form-email"
+                          required
+                          placeholder=" "
+                        />
+                        <label for="form-email">
+                          <span class="lang-en">Email Address</span>
+                          <span class="lang-ar">البريد الإلكتروني</span>
+                        </label>
+                      </div>
+                      <div class="error-msg" id="email-error"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        id="form-subject"
+                        required
+                        placeholder=" "
+                      />
+                      <label for="form-subject">
+                        <span class="lang-en">Subject</span>
+                        <span class="lang-ar">الموضوع</span>
+                      </label>
+                    </div>
+                    <div class="error-msg" id="subject-error"></div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-wrapper text-area-wrapper">
+                      <textarea
+                        id="form-message"
+                        required
+                        placeholder=" "
+                        rows="4"
+                      ></textarea>
+                      <label for="form-message">
+                        <span class="lang-en">Your Message</span>
+                        <span class="lang-ar">تفاصيل الرسالة</span>
+                      </label>
+                    </div>
+                    <div class="error-msg" id="message-error"></div>
+                  </div>
+                  <button
+                    type="submit"
+                    id="form-submit-btn"
+                    class="btn btn-primary form-submit-btn"
+                  >
+                    <span class="btn-content-wrapper">
+                      <span class="submit-text">
+                        <span class="lang-en">Dispatch Message</span>
+                        <span class="lang-ar">إرسال الرسالة</span>
+                      </span>
+                      <span class="spinner hidden"></span>
+                    </span>
+                  </button>
+                  <div
+                    id="form-feedback"
+                    class="form-feedback-panel hidden"
+                  ></div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Bottom Copy -->
+          <div class="footer-bottom">
+            <div class="footer-separator"></div>
+            <div class="footer-bottom-flex">
+           
+              <div class="developer-credits">
+                <span class="lang-en credit-label" &copy;>Developed By:</span>
+
+                <span class="lang-ar credit-label" &copy;
+                  >تم التطوير بواسطة:</span
+                >
+
+                <!-- Company Branding -->
+                <a
+                  href="https://bestryful-dev.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="credit-brand"
+                >
+                  <img
+                    src="img/Bestryful_Company_logo.PNG"
+                    alt="Bestryful Dev Logo"
+                    class="credit-logo"
+                  />
+                </a>
+
+                <div class="credit-links">
+                  <!-- Website Link -->
+                  <a
+                    href="https://bestryful-dev.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="credit-link"
+                    title="Website"
+                  >
+                    <svg
+                      class="icon-svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="2" y1="12" x2="22" y2="12"></line>
+                      <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <!-- GitHub Link -->
+                  <a
+                    href="https://github.com/bestryful-dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="credit-link"
+                    title="GitHub"
+                  >
+                    <svg
+                      class="icon-svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      />
+                    </svg>
+                  </a>
+                  <!--whatsapp link-->
+                  <!-- WhatsApp Link -->
+                  <a
+                    href="https://wa.me/967773111514"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="credit-link"
+                    title="WhatsApp"
+                  >
+                    <svg 
+                      class="icon-svg whatsapp-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.372 5.378 0 12.013 0c3.212.001 6.231 1.253 8.5 3.528 2.27 2.274 3.52 5.295 3.516 8.506-.006 6.638-5.381 12.01-12.017 12.01-2.006-.001-3.973-.5-5.713-1.456L0 24zm6.59-3.815c1.601.95 3.14 1.448 4.793 1.449 5.485 0 9.948-4.463 9.953-9.95.002-2.657-1.03-5.155-2.905-7.03C16.556 2.778 14.062 1.745 11.4 1.746c-5.485 0-9.948 4.463-9.954 9.953-.001 1.737.467 3.428 1.356 4.931l-.993 3.624 3.712-.973zm13.166-7.347c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <button
+                id="back-to-top"
+                class="back-to-top"
+                aria-label="Scroll to top"
+                title="Scroll to top"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  
+                >
+                  <line x1="12" y1="19" x2="12" y2="5"></line>
+                  <polyline points="5 12 12 5 19 12"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
