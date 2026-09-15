@@ -56,20 +56,38 @@ document.addEventListener("DOMContentLoaded", () => {
   const navMenu = document.querySelector(".nav-menu");
   const navLinks = document.querySelectorAll(".nav-link");
 
-  if (mobileToggle && navMenu) {
-    mobileToggle.addEventListener("click", () => {
+    if (mobileToggle && navMenu) {
+    // 1. Toggle when clicking the hamburger button
+    mobileToggle.addEventListener("click", (e) => {
+      e.stopPropagation(); // CRITICAL: Stop click from immediately closing the menu
       const isExpanded = mobileToggle.getAttribute("aria-expanded") === "true";
       mobileToggle.setAttribute("aria-expanded", !isExpanded);
       navMenu.classList.toggle("active");
     });
 
+    // 2. Close when clicking an individual link
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
         navMenu.classList.remove("active");
         mobileToggle.setAttribute("aria-expanded", "false");
       });
     });
+
+    // 3. FIXED POSITION: Listening for page clicks out here, outside the loop!
+    document.addEventListener("click", (event) => {
+      const isMenuOpen = navMenu.classList.contains("active");
+      const clickedInsideMenu = navMenu.contains(event.target);
+      const clickedToggleBtn = mobileToggle.contains(event.target);
+
+      if (isMenuOpen && !clickedInsideMenu && !clickedToggleBtn) {
+        navMenu.classList.remove("active");
+        mobileToggle.setAttribute("aria-expanded", "false");
+      }
+    });
   }
+
+
+  
 
   // 4. ScrollSpy Active Link Highlighter
   const sections = document.querySelectorAll("section, footer");
