@@ -125,10 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "رئيس القطاع التجاري",
     ],
   };
-  // =========================================================================
-  // 1. TYPEWRITER EFFECT DEFINITIONS (Move this block up!)
-  // =========================================================================
-
+ 
   let titleIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
@@ -175,9 +172,6 @@ document.addEventListener("DOMContentLoaded", () => {
     typeEffect();
   }
 
-  // =========================================================================
-  // 2. LANGUAGE STATE MANAGER (Place this underneath the Typewriter code)
-  // =========================================================================
   const langToggleBtn = document.getElementById("lang-toggle");
 
   // Read stored language preference or default to 'en'
@@ -209,54 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // let titleIndex = 0;
-  // let charIndex = 0;
-  // let isDeleting = false;
-  // let typewriterTimeout = null;
 
-  // function typeEffect() {
-  //     if (!typewriterElem) return;
-
-  //     const currentLangList = titles[currentLang] || titles.en;
-  //     const currentTitle = currentLangList[titleIndex % currentLangList.length];
-
-  //     if (isDeleting) {
-  //         typewriterElem.textContent = currentTitle.substring(0, charIndex - 1);
-  //         charIndex--;
-  //     } else {
-  //         typewriterElem.textContent = currentTitle.substring(0, charIndex + 1);
-  //         charIndex++;
-  //     }
-
-  //     let typeSpeed = isDeleting ? 40 : 80;
-
-  //     if (!isDeleting && charIndex === currentTitle.length) {
-  //         typeSpeed = 2200; // Pause at end of word
-  //         isDeleting = true;
-  //     } else if (isDeleting && charIndex === 0) {
-  //         isDeleting = false;
-  //         titleIndex++;
-  //         typeSpeed = 400; // Pause before typing next word
-  //     }
-
-  //     typewriterTimeout = setTimeout(typeEffect, typeSpeed);
-  // }
-
-  // function restartTypewriter(lang) {
-  //     clearTimeout(typewriterTimeout);
-  //     titleIndex = 0;
-  //     charIndex = 0;
-  //     isDeleting = false;
-  //     if (typewriterElem) {
-  //         typewriterElem.textContent = '';
-  //     }
-  //     typeEffect();
-  // }
-
-  // // Start typewriter
-  // typeEffect();
-
-  // 6. Interactive Engineering Timeline Filters
   const filterBtns = document.querySelectorAll(".filter-btn");
   const timelineItems = document.querySelectorAll(".timeline-item");
 
@@ -269,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       timelineItems.forEach((item) => {
         const category = item.getAttribute("data-category");
-        if (filterValue === "mgmt" || category === filterValue) {
+        if (filterValue === "all" || category === filterValue) {
           item.style.display = "block";
         } else {
           item.style.display = "none";
